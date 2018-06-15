@@ -4,7 +4,8 @@ This is a starter project containing necessary information to display graphics o
 
 ## Intro
 Launchpad is a USB powered MIDI pad controller. It can be used to control music instruments and make funky lightshows.
-MIDI is a standard for interacting with musical devices. The functions to talk to MIDI devices are provided by your operating system and are accessible from Python, Javascript or any other language
+You can light up the pads and also get a message when the pad is pressed.
+MIDI is a standard for interacting with musical devices. The functions which talk to MIDI devices are provided by your operating system and are accessible from Python, Javascript or any other language
 
 ### Setup (Python)
 Create a virtual environment and install python-rtmidi module. `virtualenv` is used to isolate python modules so they don't pollute your system. `python-rtmidi` is a library for interacting with the system  in order to access MIDI devices.   
