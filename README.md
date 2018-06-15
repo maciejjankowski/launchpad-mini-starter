@@ -7,7 +7,7 @@ Launchpad is a USB powered MIDI pad controller. It can be used to control music 
 MIDI is a standard for interacting with musical devices. The functions to talk to MIDI devices are provided by your operating system and are accessible from Python, Javascript or any other language
 
 ### Setup (Python)
-Create a virtual environment and install python-rtmidi module. `virtualenv` is used to isolate python modules so they don't pollute your system. `python-rtmidi` is a library for interacting with the system to access MIDI devices.   
+Create a virtual environment and install python-rtmidi module. `virtualenv` is used to isolate python modules so they don't pollute your system. `python-rtmidi` is a library for interacting with the system  in order to access MIDI devices.   
 ````bash
 virtualenv XXX
 source XXX/bin/activate
@@ -32,5 +32,10 @@ for port_no in range(mo.get_port_count()):
             # or 'Launchpad Pro Standalone Port'
             midi_port = mo.open_port(port_no)
             
-midi_port.send_message([0x90, 8, 14])
+# light up the top-right pad with green color 
+midi_port.send_message([0x90, 7, 28]) # 7 and 28 are taken from the docs
+
+# docs: https://global.novationmusic.com/support/downloads/launchpad-programmers-reference-guide
 ````
+
+further information can be found in the [documentation](https://global.novationmusic.com/support/downloads/launchpad-programmers-reference-guide)
