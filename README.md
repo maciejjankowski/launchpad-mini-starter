@@ -33,7 +33,7 @@ for port_no in range(mo.get_port_count()):
             midi_port = mo.open_port(port_no)
             
 # light up the top-right pad with green color 
-midi_port.send_message([0x90, 7, 28]) # 7 and 28 are taken from the docs
+midi_port.send_message([0x90, 7, 28]) # 7 and 28 are position and color, taken from the docs
 
 # docs: https://global.novationmusic.com/support/downloads/launchpad-programmers-reference-guide
 ````
