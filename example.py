@@ -14,6 +14,7 @@ def main():
     midi_port.send_message([0x90, 7, 28])
 
 if (__name__ == '__main__'):
-    main();
+    main()
+    
 else:
     print("wat?", __name__)
