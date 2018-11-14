@@ -40,3 +40,5 @@ midi_port.send_message([0x90, 7, 28]) # 7 and 28 are position and color, taken f
 ````
 
 further information can be found in the [documentation](https://global.novationmusic.com/support/downloads/launchpad-programmers-reference-guide)
+
+[Launchpad mini pdf](https://github.com/Granjow/launchpad-mini/blob/master/doc/launchpad-programmers-reference.pdf)
