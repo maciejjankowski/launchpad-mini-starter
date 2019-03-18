@@ -8,6 +8,12 @@ You can light up the pads and also get a message when the pad is pressed.
 MIDI is a standard for interacting with musical devices. The functions which talk to MIDI devices are provided by your operating system and are accessible from Python, Javascript or any other language
 
 ### Setup (Python)
+install optional packages required for python-rtmidi:
+````bash
+sudo apt-get install libasound2-dev
+sudo apt-get install libjack-dev
+````
+
 Create a virtual environment and install python-rtmidi module. `virtualenv` is used to isolate python modules so they don't pollute your system. `python-rtmidi` is a library for interacting with the system  in order to access MIDI devices.   
 ````bash
 virtualenv XXX
