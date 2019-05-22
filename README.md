@@ -13,7 +13,7 @@ install optional packages required for python-rtmidi:
 sudo apt-get install libasound2-dev
 sudo apt-get install libjack-dev
 ````
-
+### setup cont'd
 Create a virtual environment and install python-rtmidi module. `virtualenv` is used to isolate python modules so they don't pollute your system. `python-rtmidi` is a library for interacting with the system  in order to access MIDI devices.   
 ````bash
 virtualenv XXX
