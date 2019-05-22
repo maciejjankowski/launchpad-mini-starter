@@ -7,7 +7,7 @@ Launchpad is a USB powered MIDI pad controller. It can be used to control music 
 You can light up the pads and also get a message when the pad is pressed.
 MIDI is a standard for interacting with musical devices. The functions which talk to MIDI devices are provided by your operating system and are accessible from Python, Javascript or any other language
 
-### Setup (Python)
+### Setup (Python, linux only)
 install optional packages required for python-rtmidi:
 ````bash
 sudo apt-get install libasound2-dev
