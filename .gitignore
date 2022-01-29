@@ -1,3 +1,6 @@
 .history/
 oioioi/*
 oi/*
+venv/*
+.vscode
+__pycache__
